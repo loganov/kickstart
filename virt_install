@@ -1,0 +1,2 @@
+virt-install --connect=qemu:///system --network-bridge=vm-bridge --extra-args="console=tty0 console=ttyS0,115200" --name=vm-kickstart --disk /dev/vg-filesystem/vm-kickstart --vcpus=1 --ram 2048 --accelerate --location http://192.168.1.132/mirror/x86_64 --nographics
+
